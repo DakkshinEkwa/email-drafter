@@ -1,0 +1,34 @@
+# Per-campaign config. Edit [panel] + [email] for each new panel.
+
+[account]
+active = "yahoo"
+
+[account.yahoo]
+from_name = "Dakkshin Perera"
+imap_host = "imap.mail.yahoo.com"
+imap_port = 993
+# drafts_folder = "Draft"    # Yahoo calls it "Draft" (no s)
+# Fill YAHOO_EMAIL_PASSWORD in .env when app password unlocks
+
+[gsheet]
+spreadsheet = ""   # paste full Google Sheets URL or bare ID here
+
+[panel]
+category = "Veterinary Client Experience Panel"
+title = "The Fear-Free Practice — Designing the Visit Around the Patient, Not Just the Owner"
+short_title = "VBI Fear-Free Practice Panel"
+date = "Tuesday, August 18, 2026"
+time = "8:00 PM – 9:00 PM EDT"
+speaker_count = "2–4 — Natasha Caplan confirmed"
+description = """This panel explores how fear, anxiety, and stress in veterinary patients can affect care quality, appointment flow, team safety, client trust, and overall practice performance. The discussion will break down practical fear-free strategies, including pre-visit planning, low-stress handling, calmer exam-room design, and teamwide training systems that help every visit feel more consistent and less reactive. It will also look at the business side of the fear-free model, including how reduced patient stress can support better compliance, stronger rebooking, improved client loyalty, and more measurable patient-experience outcomes."""
+points = [
+    "Why patient fear is a business problem, not just a welfare one — how anxious, fractious animals lengthen appointments, raise injury risk, and quietly drive owners to skip visits",
+    "The Fear-Free toolkit that actually changes the room: pre-visit pharmaceuticals, low-stress handling, and environment design that any practice can implement without a remodel",
+    "Training the whole team, not just the DVM — why the experience can't depend on which tech restrains the cat, and how top practices standardize calm handling across every shift",
+    "The economics of the fear-free visit: how reducing patient stress improves compliance, rebooking, and word-of-mouth in a market where every visit counts",
+    "Measuring what matters: tracking handling incidents, sedation-free procedures, and owner-reported anxiety to prove the model is working — and where the field is heading next",
+]
+
+[email]
+cc = ""
+subject = "Invitation to speak — {{SHORT_TITLE}}, {{SHORT_DATE}}"

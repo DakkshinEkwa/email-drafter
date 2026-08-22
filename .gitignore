@@ -1,0 +1,22 @@
+# Python environments
+venv/
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Secrets
+.env
+*.env
+credentials.json
+token.json
+token.json.bak
+
+# Local campaign data
+drafted_log.csv
+drafted_log_oba.csv
+out/
+*.xlsx
+
+# OS
+.DS_Store

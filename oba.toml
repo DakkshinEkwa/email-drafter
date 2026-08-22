@@ -1,0 +1,42 @@
+# OBA (Ophthalmology Business Academy) campaign config.
+# Select with: draft_invites.py --org oba ...
+# Edit [panel] + [email].subject for each new panel.
+
+[account]
+active = "rackspace"
+
+[account.rackspace]
+from_name = "Dakkshin Perera"
+imap_host = "secure.emailsrvr.com"
+imap_port = 993
+# drafts_folder = "Drafts"   # uncomment if the \Drafts auto-detect misses it
+# Credentials come from .env: RACKSPACE_EMAIL_ADDRESS / RACKSPACE_EMAIL_PASSWORD
+
+[org]
+name = "Ophthalmology Business Academy"
+
+[templates]
+html = "template_oba.html"
+text = "template_oba.txt"
+
+[gsheet]
+spreadsheet = ""   # paste full Google Sheets URL or bare ID here
+
+[panel]
+category = "Ophthalmology Premium Cataract Growth Panel"
+title = "Ophthalmology Premium Cataract Growth Panel — Building a Trusted Counseling System Without Turning Education Into a Sales Conversation"
+short_title = "Premium Cataract Growth Panel"
+date = "Thursday, November 19, 2026"
+time = "12:00 PM – 1:00 PM EDT"
+speaker_count = "2–4"
+description = """This panel explores how cataract practices can build a trusted premium counseling system that supports informed patient choice without turning education into a sales conversation. Experts will discuss when and how to introduce elective and premium options, the sequencing of lifestyle assessment and expectation setting, how to standardize counseling across surgeons, counselors, and technicians, and what dissatisfied patients and declined recommendations reveal about selection and counseling quality."""
+points = [
+    "How can cataract practices discuss elective and premium options in a way that supports informed patient choice without making the conversation feel commercially driven?",
+    "Which parts of lifestyle assessment, expectation setting, and patient education should happen before specific lens options are discussed, and who should lead those conversations?",
+    "How can practices build a consistent premium cataract counseling process across surgeons, counselors, technicians, and digital education without making the experience feel scripted?",
+    "What have dissatisfied patients, declined recommendations, or expectation mismatches taught experienced practices about patient selection, counseling quality, and how premium cataract success should be measured?",
+]
+
+[email]
+cc = ""
+subject = "Invitation to speak — {{SHORT_TITLE}}, {{SHORT_DATE}}"
